@@ -1,4 +1,4 @@
-/// @description PAUSED game
+/// @description Paused game
 if(global.game_state == STATES.PLAYING) {
 	global.game_state = STATES.PAUSED;
 }

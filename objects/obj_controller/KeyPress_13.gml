@@ -5,6 +5,7 @@ if(global.game_state != STATES.PLAYING) {
 			global.game_state = STATES.PLAYING;
 			break;
 		case 1:
+			score = 0;
 			game_restart();
 			break;
 		case 2:

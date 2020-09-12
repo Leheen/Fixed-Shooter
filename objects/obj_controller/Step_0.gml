@@ -1,5 +1,10 @@
 if(!instance_exists(obj_enemy_ufo)) {
-	global.game_state = STATES.WIN;
+	if room_exists(room_next(room)) {
+		room_goto_next();
+	}
+	else {
+		global.game_state = STATES.WIN;
+	}
 }
 else {
 	for(var i = 0; i < instance_number(obj_enemy_ufo); i++) {
