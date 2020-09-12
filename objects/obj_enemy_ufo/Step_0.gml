@@ -8,6 +8,6 @@ if(hp <= 0) {
 	instance_destroy();
 }
 
-if(global.game_state == states.playing && !alarm[1]) {
+if(global.game_state == STATES.PLAYING && !alarm[1]) {
 	alarm[1] = room_speed * random_range(0.5, 5);
 }

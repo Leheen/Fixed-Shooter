@@ -1,17 +1,17 @@
 if(!instance_exists(obj_enemy_ufo)) {
-	global.game_state = states.lost;
+	global.game_state = STATES.WIN;
 }
 else {
 	for(var i = 0; i < instance_number(obj_enemy_ufo); i++) {
 		var enemy = instance_find(obj_enemy_ufo, i);
 		if(enemy.y >= room_height) {
-			global.game_state = states.lost;
+			global.game_state = STATES.LOST;
 		}
 	}
 }
 
-if(global.game_state != states.playing) {
-	if(global.game_state == states.paused) {
+if(global.game_state != STATES.PLAYING) {
+	if(global.game_state == STATES.PAUSED) {
 		menu_min = 0;
 	}
 	else {

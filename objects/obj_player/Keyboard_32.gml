@@ -1,4 +1,4 @@
-if(global.game_state == states.playing && can_shoot) {
+if(global.game_state == STATES.PLAYING && can_shoot) {
 	can_shoot = false;
 	var bullet = instance_create_layer(x, y, "Instances", obj_bullet_player);
 	bullet.atk = atk;

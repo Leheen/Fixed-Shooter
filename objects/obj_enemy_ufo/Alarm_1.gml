@@ -1,5 +1,5 @@
 /// @description Shoot randomly
-if(global.game_state == states.playing) {
+if(global.game_state == STATES.PLAYING) {
 	var bullet = instance_create_layer(x, y, "Instances", obj_bullet_enemy);
 	bullet.atk = atk;
 	bullet.direction = point_direction(x, y, x, y+1);

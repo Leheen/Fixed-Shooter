@@ -1,7 +1,7 @@
-/// @description Paused game
-if(global.game_state == states.playing) {
-	global.game_state = states.paused;
+/// @description PAUSED game
+if(global.game_state == STATES.PLAYING) {
+	global.game_state = STATES.PAUSED;
 }
-else if(global.game_state == states.paused) {
-	global.game_state = states.playing;
+else if(global.game_state == STATES.PAUSED) {
+	global.game_state = STATES.PLAYING;
 }

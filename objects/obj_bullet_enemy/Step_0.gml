@@ -1,4 +1,4 @@
-if(global.game_state == states.playing) {
+if(global.game_state == STATES.PLAYING) {
 	speed = spd;
 }
 else {
